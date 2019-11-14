@@ -29,12 +29,12 @@ function parse(tokens) {
 
     // Desc: returns the element of tokens associated with the current value of the c local variable.
     function peek() {
-        tokens[c]
+        return tokens[c]
     }
 
     // Desc: returns the element of tokens associated with the current value of the c local variable and increments c
     function consume() {
-        tokens[c++]
+        return tokens[c++]
     }
 
     // Desc: gets the current token (invokes peek()), parses it to a natural number and returns a new number token
